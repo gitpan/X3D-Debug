@@ -1,0 +1,6 @@
+Revision history for Perl extension X3D::Debug.
+
+0.01  Wed Jul  2 22:28:39 2008
+	- original version; created by h2xs 1.23 with options
+		-An X3D::Debug
+
