@@ -25,3 +25,4 @@ BEGIN {
 
 my $sv = 1234;
 X3D::Debug::sv_dump($sv);
+is X3D::Debug::SvREFCNT(\$sv), 2;

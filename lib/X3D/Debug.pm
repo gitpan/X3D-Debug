@@ -25,12 +25,16 @@ our @EXPORT = qw(
 	
 );
 
-our $VERSION = '0.01';
+our $VERSION = '0.011';
 
 require XSLoader;
 XSLoader::load('X3D::Debug', $VERSION);
 
 # Preloaded methods go here.
+
+use Hash::NoRef;
+
+*SvREFCNT = \&Hash::NoRef::SvREFCNT;
 
 1;
 __END__
